@@ -1,0 +1,68 @@
+.rish5{
+
+    height: 20px;
+    
+    width: 134px;
+    
+    font-size: 14px;
+    }
+    .ris {
+        height:21px; 
+        background-color: black;
+        color: aliceblue;
+       
+    }
+    .ris1 {
+        height:21px; 
+        background-color: black;
+        color: aliceblue;
+        width:1076px;
+        display: inline-block;
+
+    }
+    
+    .year {
+        
+        width: 80px;
+        height: 25px;
+    }
+    .month {
+        
+        width: 80px;
+        height: 25px;
+    }
+    .pre {
+        background-image: url("previous.png");
+        width: 157px;
+        height: 45px;
+    }
+    .next {
+        background-image: url("next.png");
+        width: 265px;
+        height: 45px;
+    }
+    .select1 {
+        background-image: url("11111.png");
+        width: 139px;
+        height: 45px;
+    }
+    .select2 {
+        background-image: url("22222.png");
+        width: 229px;
+        height: 45px;
+    }
+    .select3 {
+        background-image: url("33333.png");
+        width: 265px;
+        height: 45px;
+    }
+    .select4 {
+        background-image: url("44444.png");
+        width: 180px;
+        height: 45px;
+    }
+    .select5 {
+        background-image: url("55555.png");
+        width: 140px;
+        height: 45px;
+    }

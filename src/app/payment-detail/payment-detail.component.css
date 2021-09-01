@@ -1,0 +1,40 @@
+.pre {
+    background-image: url("previous.png");
+    width: 157px;
+    height: 45px;
+}
+.next {
+    background-image: url("next.png");
+    width: 265px;
+    height: 45px;
+}
+.ris {
+    height:21px;
+    background-color: black;
+    color: aliceblue;
+}
+.select1 {
+    background-image: url("11.png");
+    width: 139px;
+    height: 45px;
+}
+.select2 {
+    background-image: url("22.png");
+    width: 229px;
+    height: 45px;
+}
+.select3 {
+    background-image: url("33.png");
+    width: 271px;
+    height: 45px;
+}
+.select4 {
+    background-image: url("44.png");
+    width: 180px;
+    height: 45px;
+}
+.select5 {
+    background-image: url("55.png");
+    width: 136px;
+    height: 45px;
+}

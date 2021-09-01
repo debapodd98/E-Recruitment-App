@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(203, 230, 255);
+}
+.ris {
+    height:21px;
+    background-color: black;
+    color: aliceblue;
+}
+.ris2 {
+    height: 3px;
+    background-color: black;
+}
+.ris3 {
+    border-radius: 25px;
+    background:deepskyblue;
+    padding: 20px;
+    width: 400px;
+    height: 20px;
+    display: inline-block;
+}
+.ris4 {
+    color: #FFFFFF;
+    background-color: blue;
+}
+.select1 {
+    background-image: url("1.png");
+    width: 139px;
+    height: 45px;
+}
+.select2 {
+    background-image: url("2.png");
+    width: 229px;
+    height: 45px;
+}
+.select3 {
+    background-image: url("3.png");
+    width: 271px;
+    height: 45px;
+}
+.select4 {
+    background-image: url("4.png");
+    width: 180px;
+    height: 45px;
+}
+.select5 {
+    background-image: url("5.png");
+    width: 140px;
+    height: 45px;
+}
+.app {
+    font-size: 30px;
+}
+.ris5 {
+    display:inline-block;
+    height:40px;
+    width: 1366px;
+    background-color: rgba(12, 1, 1, 0.788);
+    color: aliceblue;
+}

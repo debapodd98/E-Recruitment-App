@@ -1,0 +1,290 @@
+<div align=center>
+        <button class="select1" routerLink="/spost" ></button>
+         <button class="select2" routerLink="/pinfo"></button>
+          <button class="select3" routerLink="/pqual"></button>
+           <button class="select4" routerLink="/paydetail"></button>
+        <button class="select5" routerLink="/preview"></button></div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<body><div>
+  PERSONAL INFORMATION(*:MANDATORY FIELDS)
+</div><br>
+<div class="ris" align=left>
+    Personal Details
+</div>
+<table cellpadding=10 align=center>
+<tr colspan=4>
+        <td>First Name:<span class=rish>*</span> &nbsp;<td><input type="text" name=fname value="">
+        <td>Middle Name:<span class=rish>*</span> &nbsp;<td><input type="text" name=mname value="">
+    <td>Last Name:<span class=rish>*</span> &nbsp;<td><input type="text" name=lname value=""></td></tr>
+    <tr><td>Father's Name:<span class=rish>*</span><td><input type="text" name=faname value=""></td><td colspan=2></td><td>
+        Father's Occupation:<td>
+          <select>
+            <option value=0>Select</option>
+            <option value=1>Service</option>
+            <option value=2>Business</option>
+            <option value=3>Retired</option>
+            <option value=4>Assistant Engineer</option>
+          </select>
+    </td></tr>
+    <tr><td>Gender:<span class=rish>*</span><td>
+        <select>
+            <option value=0>Select</option>
+            <option value=1>Male</option>
+            <option value=2>Female</option>
+            <option value=3>Others</option>
+          </select>
+    </td><td colspan=2></td><td>
+        Date of Birth:<span class=rish>*</span><td><input type="date" name="date" value="">
+    </td></tr>
+    <tr><td>Religion:<span class=rish>*</span></td><td>
+        <select>
+            <option value=0>Select</option>
+            <option value=1>Hindu</option>
+            <option value=2>Muslim</option>
+            <option value=3>Christian</option>
+          </select>
+    </td>
+    <td colspan=2></td><td>Whether domicile in the state J&K<br>during 01.01.80 - 01.01.89::</td>
+    <td>Yes&nbsp;<input type="radio" name="domicile" value="yes">
+    No<input type="radio" name="domicile" value="no"></td></tr>
+
+    <tr><td>Category:<span class=rish>*</span>
+      <td>General&nbsp;<input type="radio" name="cat" value="general">
+      OBC<input type="radio" name="cat" value="obc">
+      SC&nbsp;<input type="radio" name="cat" value="sc">
+        ST<input type="radio" name="cat" value="st"></td>
+        <td colspan=2></td><td>Whether you belong to PAF<br>(Project affected familiy):</td>
+        <td>Yes&nbsp;<input type="radio" (click)="func()" name="paf" value="yes">
+        No<input type="radio" name="paf" value="no">
+        
+            <select [disabled]="isDisabled">
+                <option value=0>Select</option>
+                <option value=1>Nathpa Jhakri HEP</option>
+                <option value=2>Others</option>
+              </select>
+        </td></tr>
+        <tr>
+          <td rowspan="2">
+              <input type = "date" name = "date2" value = "date2"><br>Date of Insurance</td>
+              <td rowspan="2"><input type = "text" name = "cno" value = ""><br>Certificate No.
+          </td>
+          <td colspan="2"></td>
+          <td>
+              Ex-Serviceman:</td><td>Yes<input type = "radio" name = "ex" value = "">
+              No:<input type = "radio" name = "ex" value = ""></td>
+          
+        </tr>
+        <br>
+        <tr>
+            <td>
+                Physically Disabled:</td><td>Yes<input type = "radio" name = "pd" value = "">
+                No<input type = "radio" name = "pd" value = ""></td>
+                <td colspan="2"></td>
+                <td>
+                    Married Status:</td><td>Married<input type = "radio" name = "m" value = "">
+                    Unmarried<input type = "radio" name = "m" value = ""></td>
+        </tr>
+        <tr><td>
+          <select>
+              <option value=0>Select</option>
+              <option value=1>Visually Handicapped</option>
+              <option value=2>Physically Handicapped</option>
+              <option value=2>Mentally Retarded</option>
+          </select>
+        </td>
+        <td>
+            <select>
+                <option value=0>Select</option>
+                <option value=1>Blind Person</option>
+                <option value=2>Deaf Person</option>
+                <option value=2>Dumb Person</option>
+            </select>
+          </td><td colspan="1"></td>
+        <td><input type="text" name="handi" value=""></td></tr>
+        <tr>
+            <td rowspan="2">
+                Cerficate No.<br><input type = "text" name = "cno2" value = ""></td><td>
+                Date of Issue<br>
+                <input type = "date" name = "date3" value = "date3">
+            </td>
+        </tr>
+</table>
+<div class="ris" align=left>
+    Correspondance Address
+</div>
+<table cellpadding=10>
+    <tr colspan="4"><td></td><td>Address Line 1:<span class=rish>*</span> &nbsp;</td><td>
+      <textarea rows="1" cols="35"></textarea>
+    </td>
+    </tr>
+    <tr colspan="4"><td></td><td>Address Line 2: &nbsp;</td><td>
+        <textarea rows="1" cols="35"></textarea>
+      </td>
+      </tr>
+      <tr><td></td>
+          <td>City/Town:<span class=rish>*</span></td><td>
+            <input type="text" name="city" value=""> 
+          </td>
+          <td>District:<span class=rish>*</span></td><td>
+            <input type="text" name="city" value=""> 
+          </td>
+          <td>State:<span class=rish>*</span></td><td>
+            <input type="text" name="city" value=""> 
+          </td>
+          <td>Pincode:<span class=rish>*</span></td><td>
+            <input type="text" name="city" value=""> 
+          </td>
+      </tr>
+    </table>
+
+    
+    <div class="ris" align=left>
+        Permanent Address &nbsp; <input type="checkbox" (click)="func2()"> Same as Correspondance address
+    </div>
+    <table cellpadding=10>
+        <tr colspan="4"><td></td><td>Address Line 1:<span class=rish>*</span> &nbsp;</td><td>
+          <textarea [disabled]="isDisabled2" rows="1" cols="35"></textarea>
+        </td>
+        </tr>
+        <tr colspan="4"><td></td><td>Address Line 2: &nbsp;</td><td>
+            <textarea [disabled]="isDisabled2" rows="1" cols="35"></textarea>
+          </td>
+          </tr>
+          <tr><td></td>
+              <td>City/Town:<span class=rish>*</span></td><td>
+                <input type="text" [disabled]="isDisabled2" name="city" value=""> 
+              </td>
+              <td>District:<span class=rish>*</span></td><td>
+                <input type="text" [disabled]="isDisabled2" name="city" value=""> 
+              </td>
+              <td>State:<span class=rish>*</span></td><td>
+                <input type="text" [disabled]="isDisabled2" name="city" value=""> 
+              </td>
+              <td>Pincode:<span class=rish>*</span></td><td>
+                <input type="text" [disabled]="isDisabled2" name="city" value=""> 
+              </td>
+          </tr>
+        </table>
+
+        <div class="ris" align=left>
+            Other Details
+        </div>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Landline Number:
+                 &nbsp;&nbsp;
+                 <input type="text" name="lno" value="">
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Are you SJVN employee:&nbsp;&nbsp;&nbsp; 
+                     Yes<input type="radio" (click)="func3()" name="sjvn" value="">
+                     No<input type="radio" name="sjvn" value="">
+             <br><br>
+             
+                 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Mobile Number:
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <input type="text" name="mob" value="">
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Date of Joining&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Employee Number
+             
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               
+                        <input type="date" [disabled]="isDisabled3" name="date3" value="">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" [disabled]="isDisabled3" name="employeeno" value=""> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        State of Domicile:<span class=rish>*</span>&nbsp;&nbsp;&nbsp;
+    <select>
+        <option value="0">Select</option>
+        <option value="1">Delhi</option>
+        <option value="2">Mumbai</option>
+        <option value="3">Kolkata</option>
+        <option value="4">Hyderabad</option>
+        <option value="5">Bengaluru</option>
+        <option value="6">Chennai</option>
+        <option value="7">Others</option>
+
+    </select> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Project/Station<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select [disabled]="isDisabled3">
+                <option value="0">Select</option>
+                <option value="1">Devsari HEP</option>
+                <option value="2">Malad</option>
+                <option value="3">Andheri West</option>
+                <option value="4">Howrah</option>
+                <option value="5">SaltLake</option>
+                <option value="6">Connaught Place</option>
+                <option value="6">Rajarhat</option>
+                <option value="6">New Town</option>
+                <option value="7">Others</option>
+        
+            </select> <br>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="pre" routerLink="/spost"></button>&nbsp;
+                <button class="next" routerLink="/pqual"></button>
+
+
+            
+
+</body>
